@@ -30,6 +30,36 @@ body {
   display: flex;
   justify-content: center;
 }
+.slide_container {
+  padding: 2em 4em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: absolute;
+  text-transform: capitalize;
+}
+.slide_container p {
+  font-size: 1em;
+  font-weight: 600;
+  color: #323031;
+  margin: 0 0 15px 0 ;
+  padding-bottom: 10px;
+}
+.slide_container span {
+  font-size: 0.8em;
+  color: #394756;
+  width: 20%;
+  text-align: right;
+}
+.cadre {
+  border: 1px solid #fff;
+  width: 365px;
+  height: 222px;
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: -30px;
+  position: relative;
+}
 h2 {
   font-size: 2em;
   padding-bottom: 10px;

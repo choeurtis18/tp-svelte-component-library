@@ -81,6 +81,18 @@
 <div class="component_container">
   <h2>Range Slider</h2>
   <div class="component range_container">
-    <Range/>
-  </div>  
+    <div class="cadre"></div>
+      <div class="slide_container">
+        <Range 
+          range="1500" 
+          minValue="600"
+          maxValue="3000"
+        />
+        <Range 
+          range="500" 
+          minValue="200"
+          maxValue="1500"
+        />
+      </div> 
+    </div> 
 </div>
