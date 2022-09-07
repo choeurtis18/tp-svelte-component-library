@@ -1,9 +1,10 @@
 <script>
   import Card from './components/Card.svelte';
   import Tooltip from './components/Tooltip.svelte';
+  import Salescard from './components/Salescard.svelte';
+  import Rangeslider from './components/Rangeslider.svelte';
   import Input from './components/Input.svelte';
   import Range from './components/Range.svelte';
-
 </script>
 
 <div class="component_container">
@@ -25,6 +26,23 @@
       color="orange"
     />
   </div>
+</div>
+
+<div>
+  <h1>Salescard</h1>
+  <Salescard 
+  animationSpeed = { 60 }
+  progressValue = { 0 }
+  progressEndValue = { 60 }
+  />
+</div>
+
+<div>
+  <h1>Rangeslider</h1>
+  <Rangeslider 
+  minValue = {100}
+  maxValue = {700}
+  />
 </div>
 
 <div class="component_container">
