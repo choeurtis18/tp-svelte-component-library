@@ -2,24 +2,18 @@
   export let range = "1700";
   export let minValue = "600";
   export let maxValue = "3000";
+  export let title = "Titre de Range";
   
 </script>
 
-<div class="slide_item">
-  <div class="slide_title">
-    <p>Modifier mon plafond de paiement</p>
-  </div>
+
   <div class="slide_range">
     <input type="range" min={ minValue } max={ maxValue } bind:value={ range } class="slider" id="myRange">
     <span>{range}</span>
   </div>
-</div>
 
 <style>
   
-  .slide_item:first-child {
-    margin-bottom: 40px;
-  }
   .slide_range {
     display: flex;
     align-items: center;
