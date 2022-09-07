@@ -1,6 +1,8 @@
 <script>
   import Card from './components/Card.svelte';
   import Tooltip from './components/Tooltip.svelte';
+  import Salescard from './components/Salescard.svelte';
+  import Rangeslider from './components/Rangeslider.svelte';
 </script>
 
 <h1>Cards</h1>
@@ -52,5 +54,15 @@
     texte="Rigth"
     position="Left"
   />
-  
 </div>
+
+<Salescard 
+animationSpeed = { 60 }
+progressValue = { 0 }
+progressEndValue = { 60 }
+/>
+
+<Rangeslider 
+minValue = {100}
+maxValue = {700}
+/>
