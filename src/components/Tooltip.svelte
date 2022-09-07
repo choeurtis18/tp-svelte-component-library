@@ -5,22 +5,34 @@ export let texte = '';
 export let position = 'Top'; 
 
 </script>
+  <div class="tooltip { position }"> { title }
+      <span class="tooltiptext">{ texte }</span>
+  </div>
 
-<div class="tooltip { position }"> { title }
-    <span class="tooltiptext">{ texte }</span>
-</div>
 
 <style>
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  background-color: #6083A9;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: 1px solid transparent;
+}
+
+.tooltip:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  color: #323031;
+  border: 1px solid #323031;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
+  background-color: #323031;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -31,7 +43,7 @@ export let position = 'Top';
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    bottom: 100%;
+    bottom: 120%;
     left: 50%;
     margin-left: -60px;
 }
@@ -45,15 +57,15 @@ export let position = 'Top';
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
-/* Rigth tooltip */
-.Rigth .tooltiptext {
+/* Right tooltip */
+.Right .tooltiptext {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 105%;
+  top: -38px;
+  left: 57%;
 }
-.Rigth .tooltiptext::after {
+.Right .tooltiptext::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -68,8 +80,8 @@ export let position = 'Top';
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -5px;
-  right: 110%;
+  top: -38px;
+  right: 57%;
 }
 .Left .tooltiptext::after {
   content: "";
@@ -86,7 +98,7 @@ export let position = 'Top';
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: 100%;
+  top: 120%;
   left: 50%;
   margin-left: -60px;
 }
