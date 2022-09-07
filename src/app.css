@@ -24,11 +24,13 @@ h1 {
   margin-bottom: 4em;
   text-align: center;
   text-transform: uppercase;
+  color: #394756;
 }
 h2 {
   font-size: 1.7em;
   margin: 0 0 30px 0;
   text-transform: uppercase;
+  color: #394756;
 }
 
 
@@ -98,6 +100,9 @@ h2 {
   margin: 0 0 15px 0 ;
   padding-bottom: 10px;
 }
+.slide_item:first-child {
+  margin-bottom: 40px;
+}
 .cadre {
   border: 1px solid #7380ec;
   width: 430px;
@@ -117,7 +122,10 @@ h2 {
   max-width: 400px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1140px) {
+  #app {
+    padding: 4em 2em;
+  }
   .container_item {
     width: 100%;
     margin-bottom: 3em;

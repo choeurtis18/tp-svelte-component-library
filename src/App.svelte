@@ -91,16 +91,26 @@
   <div class="component range_component">
     <div class="cadre"></div>
       <div class="slide_container">
-        <Range 
-          range="1500" 
-          minValue="600"
-          maxValue="3000"
-        />
-        <Range 
-          range="500" 
-          minValue="200"
-          maxValue="1500"
-        />
+        <div class="slide_item">
+          <div class="slide_title">
+            <p>Modifiez votre plafond de paiement</p>
+          </div>
+          <Range 
+            range="1500" 
+            minValue="600"
+            maxValue="3000"
+          />
+        </div>
+        <div class="slide_item">
+          <div class="slide_title">
+            <p>Modifiez votre plafond de retrait</p>
+          </div>
+          <Range 
+            range="500" 
+            minValue="200"
+            maxValue="1500"
+          />
+        </div>
       </div> 
     </div> 
 </div>
