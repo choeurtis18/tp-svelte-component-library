@@ -28,43 +28,23 @@
   </div>
 </div>
 
-<h1>Tooltip</h1>
-<div style="display: flex; flex-wrap:wrap; text-align: center;" >
-  <Tooltip
-    title="Top"
-    texte="Rigth"
-    position="Top"
-  />
-  
-  <Tooltip
-    title="Rigth"
-    texte="Rigth"
-    position="Rigth"
-  />
-
-  <Tooltip
-    title="Bottom"
-    texte="Rigth"
-    position="Bottom"
-  />
-
-  <Tooltip
-    title="Left"
-    texte="Rigth"
-    position="Left"
+<div>
+  <h1>Salescard</h1>
+  <Salescard 
+  animationSpeed = { 60 }
+  progressValue = { 0 }
+  progressEndValue = { 60 }
   />
 </div>
 
-<Salescard 
-animationSpeed = { 60 }
-progressValue = { 0 }
-progressEndValue = { 60 }
-/>
+<div>
+  <h1>Rangeslider</h1>
+  <Rangeslider 
+  minValue = {100}
+  maxValue = {700}
+  />
+</div>
 
-<Rangeslider 
-minValue = {100}
-maxValue = {700}
-/>
 <div class="component_container">
   <h2>Tooltip</h2>
   <div class="component tooltip_container">
