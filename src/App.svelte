@@ -58,18 +58,21 @@
 
 <div class="component_container">
   <h2>Input</h2>
-  <div class="component">
+  <div class="component input_component">
     <Input
       type="regural"
       texte="Name"
+      placeholder="Ex : John, Thomas..."
     />
     <Input
       type="email"
-      texte="Enter your email:"
+      texte="Enter your email"
+      placeholder="Ex : name@mail.com"
     />
     <Input
       type="password"
-      texte="Password (8 characters minimum):"
+      texte="Password (8 characters minimum)"
+      placeholder="Enter your Password"
     />
     <Input
       type="textarea"
