@@ -6,6 +6,22 @@
   import Progress from './components/Progress.svelte';
   import Input from './components/Input.svelte';
   import Range from './components/Range.svelte';
+  import Carousel from './components/Carousel.svelte';
+  import TabA from './components/TabA.svelte';
+  import TabB from './components/TabB.svelte';
+  import TabC from './components/TabC.svelte';
+
+  let activeTab= TabA  
+
+  const images=[
+    {path: 'src/images/1.jpg', id: 'image1'},
+    {path: 'src/images/2.jpg', id: 'image2'},
+    {path: 'src/images/3.png', id: 'image3'},
+    {path: 'src/images/4.jpg', id: 'image4'},
+    {path: 'src/images/5.jpg', id: 'image5'},
+    {path: 'src/images/6.jpg', id: 'image6'},
+    {path: 'src/images/7.jpg', id: 'image7'}
+  ]
 </script>
 
 <h1>Bankable Components</h1>
@@ -135,13 +151,82 @@
     />
   </div>
 </div>
-<div>
+<div class="component_container">
   <h1>Rangeslider</h1>
   <Rangeslider 
   minValue = {100}
   maxValue = {700}
   />
-</div>
 <Progress 
   count = { 78 }
 />
+</div>
+
+<div class="component_container">
+  <h2>Component Carousel</h2>
+
+  <Carousel {images}>
+
+  </Carousel>
+
+</div>  
+
+
+<div class="component_container" style="display: block;">
+  <h2>Component Tabs</h2>
+
+  <div class="warpper">
+    <nav class="tabs">
+      <button class="tab" on:click={() => (activeTab= TabA)}>Svelte</button>
+      <button class="tab" on:click={() => (activeTab= TabB)}>React</button>
+      <button class="tab" on:click={() => (activeTab= TabC)}>Vue.Js</button>
+    </nav>
+  
+  </div>
+  
+  <div class="panels">
+    <div class="panel">
+    <svelte:component this={activeTab} />
+    </div>
+  </div>
+
+</div>  
+
+
+
+<style>
+  
+  .warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#7380ec;
+  display:inline-block;
+  color:#fff;
+  border: none;
+  border-radius:3px 3px 0px 0px;
+  box-shadow:0 0.2rem 0.9rem #00000080;
+  }
+  .panels{
+  background:#fffffff6;
+  box-shadow: 0 1rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  display: flex;
+  align-items: center ;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+.panel{
+  animation: fadein .8s;
+}
+</style>
