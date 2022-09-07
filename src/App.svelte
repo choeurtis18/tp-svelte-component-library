@@ -3,6 +3,7 @@
   import Tooltip from './components/Tooltip.svelte';
   import Salescard from './components/Salescard.svelte';
   import Rangeslider from './components/Rangeslider.svelte';
+  import Progress from './components/Progress.svelte';
   import Input from './components/Input.svelte';
   import Range from './components/Range.svelte';
 </script>
@@ -45,6 +46,20 @@
   />
 </div>
 
+<Salescard 
+animationSpeed = { 60 }
+progressValue = { 0 }
+progressEndValue = { 60 }
+/>
+
+<Rangeslider 
+minValue = {100}
+maxValue = {700}
+/>
+
+<Progress 
+  count = { 78 }
+/>
 <div class="component_container">
   <h2>Tooltip</h2>
   <div class="component tooltip_container">
