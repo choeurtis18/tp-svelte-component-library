@@ -14,29 +14,28 @@ export let position = 'Top';
 .tooltip {
   position: relative;
   display: inline-block;
-  background-color: #6083A9;
+  background-color: #737fec9d;
   color: #fff;
   padding: 5px 20px;
   border-radius: 5px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  border: 1px solid transparent;
+  font-size: 0.9em;
 }
 
 .tooltip:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: #fff;
-  color: #323031;
-  border: 1px solid #323031;
+  background-color: #737fec;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: #323031;
-  color: #fff;
-  text-align: center;
+  width: 220px;
+  height: 50px;
+  background-color: #fff;
+  color: #394756;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 /* Top tooltip */
 .Top .tooltiptext {
@@ -45,7 +44,7 @@ export let position = 'Top';
     z-index: 1;
     bottom: 120%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -120px;
 }
 .Top .tooltiptext::after {
   content: " ";
@@ -55,14 +54,14 @@ export let position = 'Top';
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 /* Right tooltip */
 .Right .tooltiptext {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -38px;
+  top: -58px;
   left: 57%;
 }
 .Right .tooltiptext::after {
@@ -73,14 +72,14 @@ export let position = 'Top';
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #fff transparent transparent;
 }
 /* Left tooltip */
 .Left .tooltiptext {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -38px;
+  top: -58px;
   right: 57%;
 }
 .Left .tooltiptext::after {
@@ -91,7 +90,7 @@ export let position = 'Top';
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent #fff;
 }
 /* Bottom tooltip */
 .Bottom .tooltiptext {
@@ -100,7 +99,7 @@ export let position = 'Top';
   z-index: 1;
   top: 120%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -120px;
 }
 .Bottom .tooltiptext::after {
   content: "";
@@ -110,7 +109,7 @@ export let position = 'Top';
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  border-color: transparent transparent #fff transparent;
 }
 
 .tooltip:hover .tooltiptext {

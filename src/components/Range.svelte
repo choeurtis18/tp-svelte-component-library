@@ -26,7 +26,7 @@
   }
   span {
     font-size: 0.8em;
-    color: #394756;
+    color: #7380ec;
     width: 20%;
     text-align: right;
   }
@@ -35,7 +35,7 @@
     width: 80%;
     height: 2px;
     border-radius: 2px;
-    background: #000;
+    background: #394756;
     outline: none;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
@@ -45,7 +45,7 @@
     width: 17px;
     height: 17px;
     border-radius: 50%;
-    background: #6083A9;
+    background: #7380ec;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }

@@ -75,12 +75,12 @@
     }
     input, textarea {
         border: 1px solid #3947566b;
-        border-radius: 3px;
+        border-radius: 10px;
         outline: none;
         padding: 8px 10px ;
     }
     input:focus, textarea:focus {
-        outline: 1px solid #394576c4;
+        outline: 1px solid #7380ec;
     }
     input::placeholder {
         color: #949494;

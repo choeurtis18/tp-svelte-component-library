@@ -42,27 +42,14 @@ let progress = setInterval(() => {
 
 
 <style>
-    @font-face {
-    font-family: 'Ranade-Variable';
-    src: url('../fonts/Ranade-Variable.woff2') format('woff2'),
-       url('../fonts/Ranade-Variable.woff') format('woff'),
-       url('../fonts/Ranade-Variable.ttf') format('truetype');
-       font-weight: 100 700;
-       font-display: swap;
-       font-style: normal;
-    }
-
-
+    
     .card{
-        margin-top: 1.4rem;
-        font-family: 'Ranade-Variable'; 
         padding: 1.5rem 2rem;
         border-radius: 2rem;
         background-color: white;
         box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
         width: 350px;
         transition: all 300ms ease;
-        font-family: 'Ranade-Variable';
         position: relative;
         border: 2px solid rgba(132, 139, 200, 0.18);
     }

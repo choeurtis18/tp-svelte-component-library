@@ -1,31 +1,73 @@
+@font-face {
+  font-family: 'Ranade-Variable';
+  src: url('../fonts/Ranade-Variable.woff2') format('woff2'),
+     url('../fonts/Ranade-Variable.woff') format('woff'),
+     url('../fonts/Ranade-Variable.ttf') format('truetype');
+     font-weight: 100 700;
+     font-display: swap;
+     font-style: normal;
+}
+
 body {
-  background: #394756; color: #fff;
+  background: #f0f0f0; color: #323031;
+  font-family: 'Ranade-Variable';
+  padding: 0;
+  margin: 0;
 }
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4em 10em;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 4em;
+  text-align: center;
+  text-transform: uppercase;
 }
 h2 {
-  font-size: 2em;
-  padding-bottom: 10px;
-  margin: 0 0 40px 0;
-  border-bottom: 1px solid #c0c0c0;
+  font-size: 1.7em;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
 }
+
 
 .component_container {
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6em;
+  padding-bottom: 6em;
+  border-bottom: 1px solid #b7b7b7;
+}
+.container_item p {
+  margin: 0;
+  font-size: 0.9em;
+}
+.tooltip_item {
+  text-align: right;
+  width: 60%;
+}
+.card_item {
+  width: 40%;
+}
+.input_item {
+  width: 40%;
+}
+.range_item {
+  text-align: right;
+  width: 30%;
 }
 
+
 .tooltip_container {
+  flex-direction: row-reverse;
+}
+.tooltip_component {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
-  padding: 70px 0;
-  border-radius: 50%;
-  width: 340px;
-  margin: auto;
+  max-width: 325px;
 }
 .tooltip_middleItems * {
   margin: 40px;
@@ -34,14 +76,17 @@ h2 {
 }
 
 .range_container {
-  padding: 60px 0;
+  flex-direction: row-reverse;
+}
+.range_component {
   display: flex;
   justify-content: center;
+  margin-left: 40px;
 }
 .slide_container {
   padding: 2em 4em;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position: absolute;
   text-transform: capitalize;
@@ -49,26 +94,42 @@ h2 {
 .slide_container p {
   font-size: 1em;
   font-weight: 600;
-  color: #323031;
+  color: #394756;
   margin: 0 0 15px 0 ;
   padding-bottom: 10px;
 }
 .cadre {
-  border: 1px solid #fff;
-  width: 365px;
+  border: 1px solid #7380ec;
+  width: 430px;
   height: 222px;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-top: -15px;
   margin-left: -30px;
   position: relative;
 }
 
 .input_component {
-  background: #f9fcff;
+  background: #f7f8ff;
   padding: 50px 50px;
-  border-radius: 15px;
-  color: #394756;
+  border-radius: 30px;
+  color: #7380ec;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   max-width: 400px;
-  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .container_item {
+    width: 100%;
+    margin-bottom: 3em;
+    text-align: left;
+  }
+  .container_item h2 {
+    text-align: center;
+  }
+  .component_container {
+    justify-content: center;
+  }
+  .range_component {
+    margin-left: 0;
+  }
 }
