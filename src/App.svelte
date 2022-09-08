@@ -1,4 +1,6 @@
 <script>
+  import Button from './ui/Button.svelte';
+  import Modal from './ui/Modal.svelte';
   import Card from './ui/Card.svelte';
   import Tooltip from './ui/Tooltip.svelte';
   import Salescard from './ui/Salescard.svelte';
@@ -19,6 +21,8 @@
     {path: 'src/images/6.jpg', id: 'image6'},
     {path: 'src/images/7.jpg', id: 'image7'}
   ]
+
+  let showModal = false;
 
   var titles = ['Svelte ?', 'React ?', 'Vue.js ?'];
   var contents = ["Svelte est un framework JavaScript libre et à code ouvert écrit par Rich Harris. Le framework est écrit en TypeScript. Son code source utilise la licence MIT et est hébergé sur GitHub.", "React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état.", "Vue.js, est un framework JavaScript open-source utilisé pour construire des interfaces utilisateur et des applications web monopages. Vue a été créé par Evan You et est maintenu par lui et le reste des membres actifs de l'équipe principale travaillant sur le projet et son écosystème."];
@@ -203,3 +207,28 @@
   
   <Tabs titles={titles} contents={contents}></Tabs>
 </div>  
+
+<div class="component_container range_container"  style="display: block;">
+  <h2 style="margin-bottom: 4rem;">Animated Button & Modal</h2>
+
+  <div style="text-align: -webkit-center;">
+    <Button on:click="{() => showModal = true}"/>
+
+      {#if showModal}
+        <Modal on:close="{() => showModal = false}">
+          <h3 slot="header">
+            Une banque ou vous avez le contrôle
+          </h3>
+
+          <small slot="content">
+            Depuis votre application, suivez l’activité de votre compte en temps réel. 
+            Soyez informés à chaque opération en activant les notifications. 
+            Modifiez vos plafonds et vos options simplement. 
+            Vous ne remettez plus la main sur votre carte ? 
+            Pas d’inquiétude, bloquez-la instantanément dans l’application.
+          </small>
+
+        </Modal>
+      {/if}
+  </div>
+</div>
