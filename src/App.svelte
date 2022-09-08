@@ -28,7 +28,7 @@
 
 <div class="component_container">
   <div class="container_item card_item">
-    <h2>Component Salescard</h2>
+    <h2>Composant Salescard</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis amet suscipit, a hic odio porro quam voluptatum accusamus voluptas, consectetur soluta placeat atque earum nisi beatae magnam dolorem corrupti?</p>
   </div>
   <Salescard 
@@ -41,30 +41,31 @@
 
 <div class="component_container tooltip_container">
   <div class="container_item tooltip_item">
-    <h2>Component Tooltip</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis amet suscipit, a hic odio porro quam voluptatum accusamus voluptas, consectetur soluta placeat atque earum nisi beatae magnam dolorem corrupti?</p>
+    <h2>Composant Tooltip</h2>
+    <p>Ce composant permet d'afficher une information liée au bloc survolé. Il peut être affiché sous différentes formes : au dessus, en dessous, à droite et à gauche.</p>
+    <p>Props utilisées : <br> title : le texte à survoler<br> texte : le texte affiché en survol<br> position : l'emplacement du texte à afficher</p>
   </div>
   <div class="component tooltip_component">
     <Tooltip
-      title="Top"
-      texte="Top"
+      title="Mes Dépenses"
+      texte="Retrouvez vos dépenses du mois ici... "
       position="Top"
     />
     <div class="tooltip_middleItems">
       <Tooltip
-        title="Left"
-        texte="Left"
+        title="Mon Epargne"
+        texte="Retrouvez le montant de votre Epargne ici..."
         position="Left"
       />
       <Tooltip
-        title="Right"
-        texte="Right"
+        title="Mes Virements"
+        texte="Retrouvez vos virements du mois ici..."
         position="Right"
       />
     </div>
     <Tooltip
-      title="Bottom"
-      texte="Bottom"
+      title="Mes Informations"
+      texte="Consultez vos informations bancaires ici..."
       position="Bottom"
     />
     
@@ -73,8 +74,9 @@
 
 <div class="component_container">
   <div class="container_item input_item">
-    <h2>Component Input</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis amet suscipit, a hic odio porro quam voluptatum accusamus voluptas, consectetur soluta placeat atque earum nisi beatae magnam dolorem corrupti?</p>
+    <h2>Composant Input</h2>
+    <p>Ce composant permet à l'utilisateur d'entrer des informations. Il est souvent utiliser dans les formulaires.</p>
+    <p>Props utilisés : <br> type : le type d'input <br> texte : le label de l'input <br> placeholder : le contenu du placeholder</p>
   </div>
   <div class="component input_component">
     <Input
@@ -101,8 +103,9 @@
 
 <div class="component_container range_container">
   <div class="container_item range_item">
-    <h2>Component Range Slider</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis amet suscipit, a hic odio porro quam voluptatum accusamus voluptas, consectetur soluta placeat atque earum nisi beatae magnam dolorem corrupti?</p>
+    <h2>Composant Range Slider</h2>
+    <p>Ce composant permet de choisir une valeur entre une valeur minimum et une valeur maximum.</p>
+    <p>Props utilisés : <br> range : la valeur par défaut <br> minValue : la valeur minimale <br> maxValue : la valeur maximale </p>
   </div>
   <div class="component range_component">
     <div class="cadre"></div>
@@ -132,7 +135,7 @@
 </div>
 
 <div class="component_container">
-  <h2>Cards</h2>
+  <h2>Composant Cards</h2>
   <div class="component">
     <Card 
       title="Thomas"
@@ -151,15 +154,15 @@
     />
   </div>
 </div>
-<div class="component_container">
-  <h1>Rangeslider</h1>
-  <Rangeslider 
-  minValue = {100}
-  maxValue = {700}
+<div class="component_container progress_container">
+  <div class="container_item">
+    <h2>Composant Progress Bar</h2>
+    <p>Ce composant permet d'afficher une bar de progrès avec une valeur située entre 0 et 100.</p>
+    <p>Props utilisés : <br> count : la valeur souhaitée</p>
+  </div>
+  <Progress 
+    count = { 78 }
   />
-<Progress 
-  count = { 78 }
-/>
 </div>
 
 <div class="component_container">
