@@ -1,13 +1,13 @@
 <script>
-  import Card from './components/Card.svelte';
-  import Tooltip from './components/Tooltip.svelte';
-  import Salescard from './components/Salescard.svelte';
-  import Rangeslider from './components/Rangeslider.svelte';
-  import Progress from './components/Progress.svelte';
-  import Input from './components/Input.svelte';
-  import Range from './components/Range.svelte';
-  import Carousel from './components/Carousel.svelte';
-  import Tabs from './components/Tabs.svelte';
+  import Card from './ui/Card.svelte';
+  import Tooltip from './ui/Tooltip.svelte';
+  import Salescard from './ui/Salescard.svelte';
+  import Rangeslider from './ui/Rangeslider.svelte';
+  import Progress from './ui/Progress.svelte';
+  import Input from './ui/Input.svelte';
+  import Range from './ui/Range.svelte';
+  import Carousel from './ui/Carousel.svelte';
+  import Tabs from './ui/Tabs.svelte';
   
 
   const images=[
