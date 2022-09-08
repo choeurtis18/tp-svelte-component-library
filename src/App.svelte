@@ -43,6 +43,12 @@
       <li>animationSpeed : à quelle vitesse exécuter l'animation</li>
     </ul>
     
+    <pre>
+      <code>
+        &lt;Salescard animationSpeed progressValue progressEndValue &gt;&lt;/Salescard&gt;
+      </code>
+    </pre> 
+
   </div>
   <Salescard 
   animationSpeed = { 60 }
@@ -57,6 +63,13 @@
     <h2>Composant Tooltip</h2>
     <p>Ce composant permet d'afficher une information liée au bloc survolé. Il peut être affiché sous différentes formes : au dessus, en dessous, à droite et à gauche.</p>
     <p>Props utilisées : <br> title : le texte à survoler<br> texte : le texte affiché en survol<br> position : l'emplacement du texte à afficher</p>
+  
+    <pre>
+      <code>
+        &lt;Tooltip title texte position &gt;&lt;/Tooltip&gt;
+      </code>
+    </pre> 
+  
   </div>
   <div class="component tooltip_component">
     <Tooltip
@@ -90,6 +103,13 @@
     <h2>Composant Input</h2>
     <p>Ce composant permet à l'utilisateur d'entrer des informations. Il est souvent utiliser dans les formulaires.</p>
     <p>Props utilisés : <br> type : le type d'input <br> texte : le label de l'input <br> placeholder : le contenu du placeholder</p>
+  
+    <pre>
+      <code>
+        &lt;Input type texte placeholder &gt;&lt;/Input&gt;
+      </code>
+    </pre> 
+  
   </div>
   <div class="component input_component">
     <Input
@@ -119,6 +139,13 @@
     <h2>Composant Range Slider</h2>
     <p>Ce composant permet de choisir une valeur entre une valeur minimum et une valeur maximum.</p>
     <p>Props utilisés : <br> range : la valeur par défaut <br> minValue : la valeur minimale <br> maxValue : la valeur maximale </p>
+  
+    <pre>
+      <code>
+        &lt;Range range minValue maxValue &gt;&lt;/Range&gt;
+      </code>
+    </pre> 
+  
   </div>
   <div class="component range_component">
     <div class="cadre"></div>
@@ -148,7 +175,15 @@
 </div>
 
 <div class="component_container">
+  <div class="container_item">
   <h2>Composant Cards</h2>
+  <pre>
+    <code>
+      &lt;Card title content color &gt;&lt;/Card&gt;
+    </code>
+  </pre> 
+  </div>
+
   <div class="component">
     <Card 
       title="Thomas"
@@ -172,6 +207,11 @@
     <h2>Composant Progress Bar</h2>
     <p>Ce composant permet d'afficher une bar de progrès avec une valeur située entre 0 et 100.</p>
     <p>Props utilisés : <br> count : la valeur souhaitée</p>
+    <pre>
+      <code>
+        &lt;Progress count &gt;&lt;/Progress&gt;
+      </code>
+    </pre> 
   </div>
   <Progress 
     count = { 78 }
@@ -179,7 +219,15 @@
 </div>
 
 <div class="component_container">
+  <div class="container_item">
   <h2>Component Carousel</h2>
+  <pre>
+    <code>
+      &lt;Carousel images &gt;&lt;/Carousel&gt;
+    </code>
+  </pre> 
+  </div>
+   
 
   <Carousel {images}>
 
@@ -189,6 +237,10 @@
 
 <div class="component_container" style="display: block;">
   <h2>Component Tabs</h2>
-
+  <pre>
+    <code>
+      &lt;Tabs titles= contents=&gt;&lt;/Tabs&gt;
+    </code>
+  </pre> 
   <Tabs titles={titles} contents={contents}></Tabs>
 </div>  
