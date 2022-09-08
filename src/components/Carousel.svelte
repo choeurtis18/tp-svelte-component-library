@@ -75,6 +75,9 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
     position: absolute;
     WIDTH: 30px;
     height: 50px;
+    background-color: #7380ec;
+    border:none;
+    border-radius: 100%;
 }
 #left{
     margin-left: -50px;
