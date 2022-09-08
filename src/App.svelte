@@ -41,14 +41,15 @@
       <li>progressValue : à quelle valeur commence l'animation</li>
       <li>progressEndValue : à quelle valeur doit on finir l'animation</li>
       <li>animationSpeed : à quelle vitesse exécuter l'animation</li>
+      <li>slot = icon</li>
     </ul>
     
   </div>
   <Salescard 
-  animationSpeed = { 60 }
-  progressValue = { 0 }
-  progressEndValue = { 60 }
-  />
+    animationSpeed = { 60 }
+    progressValue = { 0 }
+    progressEndValue = { 60 }>
+</Salescard>
 </div>
 
 
