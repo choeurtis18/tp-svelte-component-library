@@ -5,7 +5,7 @@
   };
 </script>
 
-<div class="progress_container">
+<div class="progress_box">
   <div class="progress">
       <div class="progress_item">
           <div class="progress_bar">
@@ -16,10 +16,10 @@
 </div>
 
 <style>
- .progress_container {
+ .progress_box {
   width: calc(100% - 2rem);
   padding: 0 1rem;
-  margin: 0 auto;
+  margin: 4em auto 0 auto;
 }
 .progress {
   display: flex;
