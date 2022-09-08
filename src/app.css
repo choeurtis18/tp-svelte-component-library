@@ -17,7 +17,7 @@ body {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 4em 10em;
+  padding: 4em 12em;
 }
 h1 {
   font-size: 2.5em;
@@ -43,12 +43,12 @@ h2 {
   border-bottom: 1px solid #b7b7b7;
 }
 .container_item p {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 0.9em;
 }
 .tooltip_item {
   text-align: right;
-  width: 60%;
+  width: 30%;
 }
 .card_item {
   width: 40%;
@@ -69,11 +69,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 325px;
+  max-width: 540px;
 }
 .tooltip_middleItems * {
   margin: 40px;
-  width: 40px;
+  width: 120px;
   text-align: center;
 }
 
@@ -120,40 +120,6 @@ h2 {
   color: #7380ec;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   max-width: 400px;
-}
-
-.warpper{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.tab{
-cursor: pointer;
-padding:10px 20px;
-margin:0px 2px;
-background:#7380ec;
-display:inline-block;
-color:#fff;
-border: none;
-border-radius:3px 3px 0px 0px;
-box-shadow:0 0.2rem 0.9rem #00000080;
-}
-.panels{
-background:#fffffff6;
-box-shadow: 0 1rem 2rem #00000080;
-min-height:200px;
-width:100%;
-max-width:500px;
-display: flex;
-align-items: center ;
-border-radius:3px;
-overflow:hidden;
-padding:20px;  
-margin-left: auto;
-margin-right: auto;
-}
-.panel{
-animation: fadein .8s;
 }
 
 @media screen and (max-width: 1140px) {

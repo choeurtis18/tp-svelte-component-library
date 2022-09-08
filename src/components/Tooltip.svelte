@@ -62,7 +62,7 @@ export let position = 'Top';
   position: absolute;
   z-index: 1;
   top: -58px;
-  left: 57%;
+  left: 78%;
 }
 .Right .tooltiptext::after {
   content: "";
@@ -80,7 +80,7 @@ export let position = 'Top';
   position: absolute;
   z-index: 1;
   top: -58px;
-  right: 57%;
+  right: 78%;
 }
 .Left .tooltiptext::after {
   content: "";
