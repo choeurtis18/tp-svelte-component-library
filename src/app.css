@@ -60,6 +60,12 @@ h2 {
   text-align: right;
   width: 30%;
 }
+.tabs_container, .carousel_container {
+  display: block;
+}
+.tabs_item, .carousel_item {
+  margin-bottom: 2em;
+}
 
 
 .tooltip_container {
