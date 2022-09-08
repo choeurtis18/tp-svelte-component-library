@@ -7,11 +7,8 @@
   import Input from './components/Input.svelte';
   import Range from './components/Range.svelte';
   import Carousel from './components/Carousel.svelte';
-  import TabA from './components/TabA.svelte';
-  import TabB from './components/TabB.svelte';
-  import TabC from './components/TabC.svelte';
-
-  let activeTab= TabA  
+  import Tabs from './components/Tabs.svelte';
+  
 
   const images=[
     {path: 'src/images/1.jpg', id: 'image1'},
@@ -22,6 +19,9 @@
     {path: 'src/images/6.jpg', id: 'image6'},
     {path: 'src/images/7.jpg', id: 'image7'}
   ]
+
+  var titles = ['Svelte ?', 'React ?', 'Vue.js ?'];
+  var contents = ["Svelte est un framework JavaScript libre et à code ouvert écrit par Rich Harris. Le framework est écrit en TypeScript. Son code source utilise la licence MIT et est hébergé sur GitHub.", "React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état.", "Vue.js, est un framework JavaScript open-source utilisé pour construire des interfaces utilisateur et des applications web monopages. Vue a été créé par Evan You et est maintenu par lui et le reste des membres actifs de l'équipe principale travaillant sur le projet et son écosystème."];
 </script>
 
 <h1>Bankable Components</h1>
@@ -174,23 +174,8 @@
 
 </div>  
 
-
 <div class="component_container" style="display: block;">
   <h2>Component Tabs</h2>
 
-  <div class="warpper">
-    <nav class="tabs">
-      <button class="tab" on:click={() => (activeTab= TabA)}>Svelte</button>
-      <button class="tab" on:click={() => (activeTab= TabB)}>React</button>
-      <button class="tab" on:click={() => (activeTab= TabC)}>Vue.Js</button>
-    </nav>
-  
-  </div>
-  
-  <div class="panels">
-    <div class="panel">
-    <svelte:component this={activeTab} />
-    </div>
-  </div>
-
+  <Tabs titles={titles} contents={contents}></Tabs>
 </div>  
