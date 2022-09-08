@@ -181,21 +181,24 @@
   />
 </div>
 
-<div class="component_container">
-  <div class="container_item">
+<div class="component_container carousel_container">
+  <div class="container_item carousel_item">
   <h2>Component Carousel</h2>
+  <p>Ce composant permet de mettre en avant vos images.</p>
+  <p>Props utilisés : <br> images : tableau d'images </p>
   </div>
-   
-
+  
   <Carousel {images}>
 
   </Carousel>
 
 </div>  
 
-<div class="component_container" style="display: block;">
-  <div class="container_item">
+<div class="component_container tabs_container">
+  <div class="container_item tabs_item">
     <h2>Component Tabs</h2>
+    <p>Ce composant permet de créer une tab de navigation afin de naviguer entre différents contenus.</p>
+    <p>Props utilisés : <br> titles: liste des titres de tabs <br> contents: liste des contenus à afficher selon chaque tab</p>
   </div>
   
   <Tabs titles={titles} contents={contents}></Tabs>
