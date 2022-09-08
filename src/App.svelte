@@ -29,7 +29,20 @@
 <div class="component_container">
   <div class="container_item card_item">
     <h2>Component Salescard</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis amet suscipit, a hic odio porro quam voluptatum accusamus voluptas, consectetur soluta placeat atque earum nisi beatae magnam dolorem corrupti?</p>
+    <p>Ce composant est une card permettant d'afficher les informations d'un compte bancaire de façon dynamique !</p>
+    <br>
+    <p>Différents props sont disponibles : </p>
+    <ul>
+      <li>title</li>
+      <li>subtitle</li>
+      <li>subtitle</li>
+      <li>currency</li>
+      <li>price</li>
+      <li>progressValue : à quelle valeur commence l'animation</li>
+      <li>progressEndValue : à quelle valeur doit on finir l'animation</li>
+      <li>animationSpeed : à quelle vitesse exécuter l'animation</li>
+    </ul>
+    
   </div>
   <Salescard 
   animationSpeed = { 60 }
